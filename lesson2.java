@@ -27,7 +27,7 @@ public class lesson2 {
         yob=Short.parseShort(temp);
         cyear=Integer.parseInt(JOptionPane.showInputDialog("Enter current year"));
         JOptionPane.showMessageDialog(null/* you are telling the user i do not have an object now*/,name +" you are "+(cyear-yob)+" years old");
-        System.out.println("Did i/o using dialog boxes");
+        System.out.println("Did i/o using dialoog boxes");
         //main being static means that there is only one method of it
         
         ///you must initialize an object before you begin using it
