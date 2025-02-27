@@ -1,6 +1,6 @@
 
-import javax.swing.JOptionPane;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /*
  * dialog boxes
