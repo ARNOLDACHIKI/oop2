@@ -7,7 +7,7 @@ public class Person {
     
     private static Scanner input =new  Scanner(System.in);
     public Person(){
-        System.out.println("Enter your name");
+        System.out.println("Enter the person's name");
         name=input.nextLine();
         System.out.println(name+" what is your gender");
         gender=input.nextLine();
@@ -27,7 +27,7 @@ public class Person {
         System.out.println("Your name is "+ name+ " and your age is " +(cy-yob)+" and you gender is "+gender);
     }
     public void setName(){
-        System.out.println("Enter your name");
+        System.out.println("Enter the person's name");
         name=input.nextLine();
     }
     public void setGender(){
@@ -47,9 +47,7 @@ public class Person {
     public Short getYearofBirth(){
         return yob;
     }
-    public Char menu(){
-        
-    }
+    
     
 
 
