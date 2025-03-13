@@ -15,8 +15,26 @@ public class demo {
         }
         System.out.println("Below are the scores for the students");
         for (byte b :marks){
-            System.out.println(b);
+            System.out.print(b+",");
         }
+        System.out.println("\n  now sorted ascending");
+        byte temp;
+            for (byte x=0;x<marks.length;x++){
+                for (byte y=0;y<4;y++){
+                    if (marks[y]>marks[y+1]){
+                        temp=marks[y];
+                        marks[y]=marks[y+1];
+                        marks[y+1]=temp;
+                       
+                    }
+                }
+            }
+            for (byte b :marks){
+                System.out.print(b+",");
+        }
+
+
+       
     }
     public static int compute(int...values){
         int sum=0;
