@@ -23,7 +23,7 @@ public Patient(String n,String g,short y,String p){
    }
    public void setPrescription(){
        System.out.println("Enter the prescription");
-         prescription=input.nextLine();
+        prescription=input.nextLine();
          
    }
    public void setName(){
@@ -41,10 +41,5 @@ public Patient(String n,String g,short y,String p){
       
 
 }
-public static void main(String[] args) {
-    Patient p;
-    p=new Patient("Jane","female",1990,"panadol");
-    p.setBill();
-    p.getPatientDetails();
-}
+
 }

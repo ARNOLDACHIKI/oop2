@@ -20,10 +20,6 @@ public class OutPatient {
         drugs=prescription.length()*100;
         bill=drugs+ConsultFee;
     }
-    public static void main(String[] args) {
-        
-       OutPatient o=new OutPatient("Grace","female",1990,500.0,"panadol");
-        o.setBill();
-}
+    
 }
 }
