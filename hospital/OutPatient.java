@@ -1,14 +1,11 @@
 package hospital;
 
-public class Patient{};
+
 public class OutPatient extends Patient{
-public class OutPatient {
+
     protected float ConsultFee;
-    protected long drugs;
-    
-    
   
-    public OutPatient(String n,String g,short y,String p,float c,String p){
+    public OutPatient(String n,String g,short y,String p,float c){
         super(n,g,y,p);
         ConsultFee=c;
         
@@ -21,5 +18,4 @@ public class OutPatient {
         bill=drugs+ConsultFee;
     }
     
-}
 }

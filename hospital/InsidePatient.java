@@ -1,15 +1,16 @@
 package hospital;
-import java.util.Scanner;
 
-public class inpatient extends Patient{
+
+public class InsidePatient extends Patient{
 
     
-    private static Scanner input=new Scanner(System.in);
-    private  static String ward;
-    private short days;
-    private float bedCharge;
-    public inPatient(String n,String g,short y,String w,short d){
-        super(n,g,y);
+    
+    protected  static String ward;
+    protected short days;
+    protected float bedCharge;
+    protected float ConsultFee;
+    public InsidePatient(String n,String g,short y,String p,String w,short d){
+        super(n,g,y,p);
          ward=w;
          days=d;
      }

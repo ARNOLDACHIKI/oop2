@@ -7,11 +7,12 @@ public class Patient {
     protected float bill;
     protected  String prescription;
     protected static Scanner input=new Scanner(System.in);
+    protected long drugs;
 
     public Patient(){};
 
-public Patient(String name,String g,short y,String p){
-    this.name=name;
+public Patient(String n,String g,short y,String p){
+    name=n;
     gender=g;
     yob=y;
     prescription=p;
