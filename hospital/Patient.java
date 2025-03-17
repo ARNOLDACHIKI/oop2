@@ -10,8 +10,8 @@ public class Patient {
 
     public Patient(){};
 
-public Patient(String n,String g,short y,String p){
-    name=n;
+public Patient(String name,String g,short y,String p){
+    this.name=name;
     gender=g;
     yob=y;
     prescription=p;
