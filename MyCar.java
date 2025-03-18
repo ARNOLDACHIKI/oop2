@@ -1,14 +1,14 @@
-public class myCar {
+public class MyCar {
     public String carName;
     public String Model;
 }
-myCar(){
+MyCar(){
     this.carName="Land Cruiser";
     this.Model="TX 250";
 }
 
 public static void main(){
-    myCar obj= new myCar();
+    MyCar obj= new MyCar();
         obj.carName="Probox";
         obj.Model="succeed"; 
 }
