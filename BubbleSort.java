@@ -3,7 +3,7 @@ public class BubbleSort {
     private static int[] numbers = {1, 2, 3, 4, 5};
     private static int [] marks=new int[7];
 
-    public static void set_Marks(){
+    public static void main(String [] args) {
         for(int i=0;i<marks.length;i++){
             marks[i]=Integer.parseInt(JOptionPane.showInputDialog("Enter the marks " +(i+1)));
         }
