@@ -3,5 +3,7 @@ public class Employee{
     protected String empID;
     protected float salary;
 
-    public Employee
+    public Employee(String  ){
+
+    }
 }
