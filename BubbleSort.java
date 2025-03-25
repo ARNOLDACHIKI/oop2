@@ -1,17 +1,17 @@
 import javax.swing.JOptionPane;
-import java.util.Arrays;
 public class BubbleSort {
     private static int[] numbers = {1, 2, 3, 4, 5};
+    
     private static int [] marks=new int[7];
 
     public static void main(String [] args) {
         for(int i=0;i<marks.length;i++){
-            marks[i]=Integer.parseInt(JOptionPane.showInputDialog("Enter the marks " +(i+1)));
+            marks[i]=Integer.parseInt(JOptionPane.showInputDialog("Enter the marks  " +(i+1)));
         }
         for(int b: marks){
             System.out.print(b+",");
         }
-        for (int p=0;p<numbers.length;p++){
+        for (int p=0;p<numbers.length-1;p++){
             //ascending order
             int temp;
             for (int j=0;j<(numbers.length-1-p);j++){
