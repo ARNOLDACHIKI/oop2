@@ -11,7 +11,7 @@ public class Converter {
         this.celsius=celsius;
     }
     public void setFahrenheit(){
-        fahrenheit=Double.parseDouble(null,JOptionPane.showInputDialog("Enter the temperature in fahrenheits"));
+        fahrenheit=Double.parseDouble(null,JOptionPane.showInputDialog("Enter the temperatures in fahrenheits"));
     }
     public void setCelsius(){
         celsius=Double.parseDouble(null,JOptionPane.showInputDialog("Enter the temperature in celsiu"));
