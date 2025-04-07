@@ -33,7 +33,7 @@ public class Converter {
     public static void main(String[] args) {
         Converter c=new Converter();
         
-        JOptionPane.showMessageDialog(null,"The temperature in celsius is "+c.convertToCelsius());
+        JOptionPane.showMessageDialog(null,"The temperature in celsius is  as "+c.convertToCelsius());
         JOptionPane.showMessageDialog(null,"The temperature in fahrenheit is "+c.convertToFahrenheit());
     }
 }
