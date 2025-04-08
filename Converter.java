@@ -3,7 +3,7 @@ public class Converter {
     private double fahrenheit;
     private double celsius;
     public Converter(){
-        fahrenheit=Double.parseDouble(null,JOptionPane.showInputDialog("Enter the temperature in fahrenheit"));
+        fahrenheit=Double.parseDouble(null,JOptionPane.showInputDialog("Enter the temperature in fahrenheits"));
         celsius=Double.parseDouble(null,JOptionPane.showInputDialog("Enter the temperature in celsius"));
     }
     public Converter(double fahrenheit,double celsius){
