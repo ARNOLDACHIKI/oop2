@@ -19,7 +19,7 @@ public class Math  extends JFrame{
     JButton btnSysLock,btnExit;
     ButtonGroup bgOperation = new ButtonGroup();
     ButtonGroup bgGender= new ButtonGroup();
-
+    JComboBox selectList=new JComboBox();
   
     public Math() {
         super("Math Operation ");
