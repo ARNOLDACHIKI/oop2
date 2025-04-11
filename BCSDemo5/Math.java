@@ -2,6 +2,7 @@
 import java.awt.FlowLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
@@ -10,6 +11,7 @@ import javax.swing.JTextField;
 
 public class Math  extends JFrame{
     JLabel lbl1,lbl2,lblResult,lblOperation,lblGender;
+    JLabel lblSelectList=new JLabel("Select List");
     JTextField txt1,txt2,txtresult;
     JRadioButton rbtnAdd=new JRadioButton("Add");
     JRadioButton rbtnProduct=new JRadioButton("product");
@@ -19,8 +21,8 @@ public class Math  extends JFrame{
     JButton btnSysLock,btnExit;
     ButtonGroup bgOperation = new ButtonGroup();
     ButtonGroup bgGender= new ButtonGroup();
-    JComboBox selectList=new JComboBox();
-  
+    JComboBox games;
+    
     public Math() {
         super("Math Operation ");
         setVisible(true);
@@ -38,6 +40,8 @@ public class Math  extends JFrame{
         txtresult = new JTextField(20);
         btnSysLock = new JButton("System Lock");
         btnExit = new JButton("Exit Program");
+        String [] gamesList = {"Select List", "Football", "Basketball","Handball", "Tennis"};
+        games = new JComboBox(gamesList);
         
         add(lbl1);
         add(txt1);
@@ -62,11 +66,13 @@ public class Math  extends JFrame{
         add(lblGender);
         add(rbtnFemale);
         add(rbtnMale);
+        add(lblSelectList);
+        add(games);
     }
     
     public static void main(String[] S) {
         new Math();
     }
 
-    
+    /*label,text field /password field,button,Radio button/checkbox,combobox */
 }
