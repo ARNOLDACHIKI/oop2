@@ -1,7 +1,7 @@
 public abstract class Animal {
     public abstract void makesound();
     public String sleep(){
-        System.out.println("sleeping");
+        System.out.println("eating");
     }
 
 }
