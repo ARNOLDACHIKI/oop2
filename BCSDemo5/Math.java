@@ -40,7 +40,7 @@ public class Math  extends JFrame{
         txtresult = new JTextField(20);
         btnSysLock = new JButton("System Lock");
         btnExit = new JButton("Exit Program");
-        String [] gamesList = {"Select List", "Football", "Basketball"  ,"Handball", "Tennis", "Baseball"};
+        String [] gamesList = {"Select List", "Football", "Basketballs"  ,"Handball", "Tennis", "Baseball"};
         games = new JComboBox(gamesList);
         
         add(lbl1);
