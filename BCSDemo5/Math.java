@@ -9,7 +9,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
 
-public class Math  extends JFrame{
+public class Math  extends JFrame{   /// the function  of this code is to make it a window with a title bar and  a boarder
     JLabel lbl1,lbl2,lblResult,lblOperation,lblGender;
     JLabel lblSelectList=new JLabel("Select List");
     JTextField txt1,txt2,txtresult;
