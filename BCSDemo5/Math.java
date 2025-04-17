@@ -25,10 +25,11 @@ public class Math  extends JFrame{   /// the function  of this code is to make i
     
     public Math() {
         super("Math Operation ");
+        setLayout(new FlowLayout());
         setVisible(true);
         setSize(300, 200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLayout(new FlowLayout());
+        
         lbl1 = new JLabel("Input 2");
         lbl2 = new JLabel("Input 2");
         lblGender=new JLabel("Gender");
