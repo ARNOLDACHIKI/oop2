@@ -24,26 +24,25 @@ public class Math  extends JFrame{   /// the function  of this code is to make i
     JComboBox games;
     
     public Math() {
-        super("Math Operation ");
-        setLayout(new FlowLayout());
-        setVisible(true);
-        setSize(300, 200);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        
-        lbl1 = new JLabel("Input 2");
+        super("Math Operation");
+        setLayout(new FlowLayout()); // Use FlowLayout for simplicity
+
+        // Initialize components
+        lbl1 = new JLabel("Input 1");
         lbl2 = new JLabel("Input 2");
-        lblGender=new JLabel("Gender");
+        lblGender = new JLabel("Gender");
         lblResult = new JLabel("Result");
-        txtresult.setEditable(false);
         lblOperation = new JLabel("Operation");
-        txt1 = new JTextField(20);
-        txt2 = new JTextField(20);
-        txtresult = new JTextField(20);
+        txt1 = new JTextField(15);
+        txt2 = new JTextField(15);
+        txtresult = new JTextField(15);
+        txtresult.setEditable(false);
         btnSysLock = new JButton("System Lock");
         btnExit = new JButton("Exit Program");
-        String [] gamesList = {"Select List", "Football", "Basketballs"  ,"Handball", "Tennis", "Baseballs"};
-        games = new JComboBox(gamesList);
-        
+        String[] gamesList = {"Select List", "Football", "Basketballs", "Handball", "Tennis", "Baseballs"};
+        games = new JComboBox<>(gamesList);
+
+        // Add components to the frame
         add(lbl1);
         add(txt1);
         add(lbl2);
@@ -54,21 +53,26 @@ public class Math  extends JFrame{   /// the function  of this code is to make i
         add(rbtnAdd);
         add(rbtnProduct);
         add(rbtnDiff);
-
-        bgOperation.add(rbtnAdd);
-        bgOperation.add(rbtnProduct);
-        bgOperation.add(rbtnDiff);
-        
-        bgGender.add(rbtnFemale);
-        bgGender.add(rbtnMale);
-
-        add(btnSysLock);
-        add(btnExit);
         add(lblGender);
         add(rbtnFemale);
         add(rbtnMale);
         add(lblSelectList);
         add(games);
+        add(btnSysLock);
+        add(btnExit);
+
+        // Group radio buttons
+        bgOperation.add(rbtnAdd);
+        bgOperation.add(rbtnProduct);
+        bgOperation.add(rbtnDiff);
+        bgGender.add(rbtnFemale);
+        bgGender.add(rbtnMale);
+
+        // Adjust frame size and make it visible
+        pack(); // Automatically sizes the frame to fit components
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true); // Set visibility after packing
+        
     }
     
     public static void main(String[] S) {
