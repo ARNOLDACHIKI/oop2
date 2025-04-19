@@ -35,7 +35,7 @@ public class Math  extends JFrame{   /// the function  of this code is to make i
         setLayout(new FlowLayout()); // Use FlowLayout for simplicity
         setSize(300,200);
         // Initialize components
-        lbl1 = new JLabel("Input one");
+        lbl1 = new JLabel("Input 1");
         lbl2 = new JLabel("Input 2");
         lblGender = new JLabel("Gender");
         lblResult = new JLabel("Result");
