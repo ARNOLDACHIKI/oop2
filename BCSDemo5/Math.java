@@ -20,7 +20,7 @@ public class Math  extends JFrame{   /// the function  of this code is to make i
     JRadioButton rbtnProduct=new JRadioButton("product");
     
     
-    JRadioButton rbtnDiff=new JRadioButton("Difference");
+    JRadioButton rbtnDiff=new JRadioButton("-");
     
 
     JRadioButton rbtnFemale=new JRadioButton("Female");
