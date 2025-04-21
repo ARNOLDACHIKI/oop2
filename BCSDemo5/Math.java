@@ -24,7 +24,7 @@ public class Math  extends JFrame{   /// the function  of this code is to make i
     
 
     JRadioButton rbtnFemale=new JRadioButton("Female");
-    JRadioButton rbtnMale=new JRadioButton("Male");
+    JRadioButton rbtnMale=new JRadioButton("Males");
     JButton btnSysLock,btnExit;
     ButtonGroup bgOperation = new ButtonGroup();
     ButtonGroup bgGender= new ButtonGroup();
