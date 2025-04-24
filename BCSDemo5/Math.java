@@ -1,13 +1,15 @@
 // Removed package declaration
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JRadioButton;
-import javax.swing.JTextField;//class
+import javax.swing.JOptionPane;
+import javax.swing.JRadioButton;//class
+import javax.swing.JTextField;
 
 public class Math  extends JFrame{   /// the function  of this code is to make it a window with a title bar and  a boarder
     
@@ -46,6 +48,15 @@ public class Math  extends JFrame{   /// the function  of this code is to make i
         txtresult.setEditable(false);
         btnSysLock = new JButton("System Lock");
         btnExit = new JButton("Exit Program");
+        btnExit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e){
+                int x=JOptionPane.showConfirmDialog(null, "Are you sure you want to exit?");
+                if(x==0){
+                    System.exit(0);
+                }
+            }
+        });
         String[] gamesList = {"Select List", "Football", "Basketballs", "Handball", "Tennis", "Baseballs"};
         games = new JComboBox<>(gamesList);
 
@@ -74,9 +85,10 @@ public class Math  extends JFrame{   /// the function  of this code is to make i
         bgOperation.add(rbtnDiff);
         bgGender.add(rbtnFemale);
         bgGender.add(rbtnMale);
-        rbtnAdd.addActionListener(new ActionListener());
-        rbtnProduct.addActionListener(new ActionListener());
-        rbtnDiff.addActionListener((ActionListener)this);
+        ActionPerformed handler=new ActionPerformed();
+        rbtnAdd.addActionListener(handler);
+        rbtnProduct.addActionListener(handler);
+        rbtnDiff.addActionListener(handler);
 
         // Adjust frame size and make it visible
         //pack(); // Automatically sizes the frame to fit components
@@ -85,23 +97,28 @@ public class Math  extends JFrame{   /// the function  of this code is to make i
         
         
     }
-        public void actionPerformed(ActionEvent e){
-            int val1=Integer.parseInt(txt1.getText());
-            int val2=Integer.parseInt(txt1.getText());
+    private class ActionPerformed implements java.awt.event.ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            int val1 = Integer.parseInt(txt1.getText());
+            int val2 = Integer.parseInt(txt2.getText());
             int result;
-            //getSource-returns the name of the object eg rbtnAdd
-            //getActionCommand-returns the caption eg sum 
-            if (e.getActionCommand().equals("sum")){
-                result=val1+val2;
-                txtresult.setText(Integer.toString(result));
-
-            }
-            if(e.getSource()==rbtnProduct){
-                result=val1*val2;
+            // getSource-returns the name of the object eg rbtnAdd
+            // getActionCommand-returns the caption eg sum 
+            if (e.getSource() == rbtnAdd) {
+                result = val1 + val2;
                 txtresult.setText(Integer.toString(result));
             }
-            
+            if (e.getSource() == rbtnProduct) {
+                result = val1 * val2;
+                txtresult.setText(Integer.toString(result));
+            }
+            if (e.getSource() == rbtnDiff) {
+                result = val1 - val2;
+                txtresult.setText(Integer.toString(result));
+            }
         }
+    }  
     
     public static void main(String[] S) {
         new Math();
