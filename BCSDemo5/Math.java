@@ -195,7 +195,7 @@ KeyListener: Keyboard events.
 
 WindowListener: Window events.
 
-✅ Components of Event Handling:
+✅ Component of Event Handling:
 
 Component	Description
 Event Source	The GUI component (e.g., button)
