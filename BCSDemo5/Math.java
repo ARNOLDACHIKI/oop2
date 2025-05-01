@@ -212,7 +212,7 @@ Clear separation of concerns
 
 Reusable and testable.
 
-❌ Cons:
+❌ Con:
 Verbose.h
 
 Not ideal for single-use listeners.
